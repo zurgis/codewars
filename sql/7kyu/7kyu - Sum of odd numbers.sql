@@ -11,3 +11,8 @@
 -- rowSumOddNumbers(1); // 1
 -- rowSumOddNumbers(2); // 3 + 5 = 8
 
+/*
+the table "nums" contains an integer "n", the number
+return your result in a column "res"
+*/
+select (n ^ 3)::int as res from nums

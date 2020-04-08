@@ -51,4 +51,4 @@ def all_rationals():
     while True:
         x = Fraction(1, 2 * Fraction(int(x)) - x + 1)
         yield x
-    '''
+'''

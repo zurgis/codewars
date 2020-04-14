@@ -10,3 +10,12 @@
 
 -- You have to create the function factorial that receives n and returns n!. You have to use recursion.
 
+-- create recursively the table with n up to and including 16
+with recursive t as (
+  select
+    0 as n,
+    1::int8 as fact
+union
+  select n + 1, (fact * (n + 1)) from t where n < 16
+)
+select * from t

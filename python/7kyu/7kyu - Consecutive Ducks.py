@@ -21,3 +21,20 @@
 # ALL translations are welcomed
 # Enjoy Learning !!
 # Zizou
+
+def consecutive_ducks(n):
+    import math
+    return not math.log2(n).is_integer()
+
+'''
+def consecutive_ducks(n):
+    while n % 2 == 0:
+        n //= 2
+    return n > 1
+
+def consecutive_ducks(n):
+    return bool(n & (n - 1))
+
+def consecutive_ducks(n):
+    return bin(n).count('1') != 1
+'''
